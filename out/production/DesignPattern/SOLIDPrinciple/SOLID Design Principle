@@ -1,0 +1,24 @@
+SOLID DESIGN PRINCIPLES
++Single Responsibility Principle(SRP)
+    ->A single class should have one primary responsibility
+    ->Separation of concerns - different classes handling different, independent classes
+
++Open-Closed Principle(OCP)
+    ->Open for extension and close for modification
+
++Liskov Substitution Principle
+    ->You should be able to substitute a base type for a subtype
+
++Interface Segregation Principle
+    ->Split into separare interfaces
+    ->YAGNI
+
++Dependency Inversion PrincipleS
+    ->High-level modules should not depend on low-level ones; use abstractions
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+GAMMA CATEGORIZATION
++Creational Patterns
++Structural Patterns
++Behavioural Patterns
