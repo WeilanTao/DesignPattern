@@ -1,0 +1,17 @@
+FACTORY
+
++Factory
+    A component responsible solely for the wholesale creation of objects.
+
+
++Motivation
+    Objects creation logic become too convoluted
+
+    Constructor os not descriptive
+        ->Name mandated by name of containing type
+        ->Cannot overload with same sets of arguments with different names
+    Wholesale object creation(non-piecewise, unlike Builder) can be outsourced to
+        ->A separated function(Factory Method->usually static; can have arbitrary name)
+        ->A separated class(Factory)
+        ->A hierarchy of factories with Abstract Factory(-> Makes it correspondence between a hierarchy of objects in a hierarchy of factories which are used to construct thoes objects)
+
