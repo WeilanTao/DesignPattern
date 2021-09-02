@@ -1,0 +1,14 @@
+PROTOTYPE
+
++Prototype:
+    A partially or fully initialized object that you clone and make use of.
+
+    To implement a prototype:
+    -> Partially construct an object and store it somewhere;
+    -> Clone the prototype
+        ->Implement your owen deep copy; or Serialize and Deserialize
+    -> Customize the resulting instance.
+
++Motivation
+    -> An existing (partially or fully constructed) design is a prototype
+    -> We make a deep copy(clone) of the prototype and customize it

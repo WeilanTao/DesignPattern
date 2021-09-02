@@ -1,0 +1,8 @@
+PROTOTYPE
+
++Prototype:
+    A partially or fully initialized object that you clone and make use of.
+
++Motivation
+    -> An existing (partially or fully constructed) design is a prototype
+    -> We make a deep copy(clone) of the prototype and customize it

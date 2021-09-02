@@ -4,7 +4,6 @@ FACTORY
     A component responsible solely for the wholesale creation of objects.
 
 
-
 +Motivation
     Objects creation logic become too convoluted
 
