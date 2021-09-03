@@ -1,0 +1,16 @@
+SINGLETON
+
++Singleton
+    A component which is instantiated only once
+
+
+
++Motivation
+    -> For some components it only make sense to have one in the system
+            Database repository
+            Object factory
+    -> The constructor call is expensive and we only do it once
+            we  only do it once;
+            we provide everyone with the same instance
+    -> Want to prevent anyone creating additional copies
+    -> Need to take care of lazy instantiation and thread safety
