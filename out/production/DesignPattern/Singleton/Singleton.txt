@@ -3,7 +3,12 @@ SINGLETON
 +Singleton
     A component which is instantiated only once
 
+    Making a 'safe' singleton is easy:
+        construct a static Lazy<T> and return its value
 
+    Instead of directly using a singleton, consider depending on an abstraction(e.g. an interface)
+
+    Consider defining singleton lifetime in DI container
 
 +Motivation
     -> For some components it only make sense to have one in the system

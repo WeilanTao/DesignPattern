@@ -13,10 +13,7 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertSame;
 
-interface Database
-{
-    int getPopulation(String name);
-}
+
 
 class SingletonDatabase implements Database{
     private Dictionary<String, Integer> capitals = new Hashtable<>();
@@ -36,11 +33,11 @@ class SingletonDatabase implements Database{
             Path path = Paths.get(file.getPath(),"capitals.txt");
             List<String> lines = Files.readAllLines(path);
 
-            Iterables.partition(lines, 2)
-                    .forEach(kv->capitals.put(
-                            kv.get(0).trim(),
-                            Integer.parseInt(kv.get(1))
-                    ));
+//            Iterables.partition(lines, 2)
+//                    .forEach(kv->capitals.put(
+//                            kv.get(0).trim(),
+//                            Integer.parseInt(kv.get(1))
+//                    ));
         }catch(Exception e){
             e.printStackTrace();
         }
@@ -65,6 +62,29 @@ class SingleronRecordFinder{
     }
 }
 
+//Dependency Injection/////////////////////////////////////////////////////////////////////////////////////////////////
+
+interface Database
+{
+    int getPopulation(String name);
+}
+class DummyDatabase implements Database
+{
+    private Dictionary<String, Integer> data = new Hashtable<>();
+
+    public DummyDatabase() {
+        data.put("alpha", 1);
+        data.put("beta", 2);
+        data.put("gamma", 3);
+    }
+
+    @Override
+    public int getPopulation(String name)
+    {
+        return data.get(name);
+    }
+}
+
 class ConfigurableRecordFinder
 {
     private Database database;
@@ -85,22 +105,7 @@ class ConfigurableRecordFinder
 public class _9SingletonDatabaseTest {
 }
 
-class DummyDatabase implements Database
-{
-    private Dictionary<String, Integer> data = new Hashtable<>();
 
-    public DummyDatabase() {
-        data.put("alpha", 1);
-        data.put("beta", 2);
-        data.put("gamma", 3);
-    }
-
-    @Override
-    public int getPopulation(String name)
-    {
-        return data.get(name);
-    }
-}
 
 class Testability
 {

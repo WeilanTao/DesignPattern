@@ -1,0 +1,12 @@
+ADAPTER
+
+Adapter
+    Getting the interface you want from the interface you have (像转换器一样)
+
+    Adapts an existing interface X to conform to the required interface Y.
+
+    ->Determine the API you have and the API you need
+    ->Creating a component which aggregates(聚合) the adaptee
+    ->Intermediate representation can pile up~use caching
+
+

@@ -9,6 +9,7 @@ import java.util.Arrays;
  *
  * This is one of the most badly-designed parts of Java. Usually, you should prefer using a copy contructor instead of using clone().
  *
+ * //deep copy-replicate every data member and copy it over
  */
 class Address implements Cloneable {
     public String streetName;

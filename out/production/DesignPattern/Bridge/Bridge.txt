@@ -1,0 +1,9 @@
+BRIDGE
+
+Bridge:
+    Connecting components together through abstraction
+
+    Bridge prevents a 'Cartesian product' complexity explosion
+
+    A mechanism that decouples an interface (hierarchy) from an implementation(hierarchy).
+
