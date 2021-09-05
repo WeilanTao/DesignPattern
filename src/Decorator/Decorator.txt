@@ -1,6 +1,14 @@
 Decorator
     Facilitates the additionof behaviors to individual objects without inheriting from them.
 
+    +Keeps a reference to the decorated object(s)
+    +May or may not forward calls
+        Delegated Members
+    +Exist in a static variation
+    +Very limited to
+        Type erasure
+        Inability to inherit from type parameters
+
 Motivation:
     +We want to augment an object with additional functionality
     +We don't want to rewrite or alter existing code(OCP)
