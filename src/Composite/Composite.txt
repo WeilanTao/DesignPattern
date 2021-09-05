@@ -1,0 +1,7 @@
+COMPOSITE
+
+树状结构专用模式
+
+Composite:
+    Composite design pattern is used to treat both single(scalar) and composite objects uniformly(they will have the same API)
+

@@ -1,0 +1,8 @@
+Decorator
+    Facilitates the additionof behaviors to individual objects without inheriting from them.
+
+Motivation:
+    +We want to augment an object with additional functionality
+    +We don't want to rewrite or alter existing code(OCP)
+    +We want to keep new functionality separate(SRP)
+    +Need to be able to interact with existing structures

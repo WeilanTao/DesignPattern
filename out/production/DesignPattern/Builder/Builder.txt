@@ -22,3 +22,6 @@ BUILDER
 
     Builder provides an API for constructing an object step-by-step
 
+  当有一个特别复杂的对象；构造的时候如果有多个构建器；那么构造的时候表现会不一样；
+    prototype：方法执行
+    bridge：构造对象
